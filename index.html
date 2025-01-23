@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="sss">
+    <a href="https://imagex1.sx.cdn.live/images/pinporn/2023/02/22/28946168.gif?width=620" onclick="audioPlay()"><img src="Screenshot 2025-01-23 001841.png" alt="peter" id="peter"></a>
+    <div id="con">
+
+  
+        <a href="https://www.amazon.com/California-Costumes-Purple-Large-Costume/dp/B003MQMZ7A/ref=sr_1_3?crid=2OZIDIUN3CLW6&dib=eyJ2IjoiMSJ9.Bs5EUqc33JroEcutgdAY54Lij7Oo4BgLAppCNFTId9qYF-BXg9q24BHcdnBa3gUmzI0NQEQaGF2W444R8uh_VbF0cP0ZlTsvKvtcoNHYEDJHnP8TB0fuG0tWoW-9iGw4f5YZphLRSZgyr4_VHOrXWlr0csR2OoqjIbAqfp5RDfOCsB8aPtK3g7Jmw35iQMKOvY7LsVR4L0IDE0kBipZ2iHMXCa4ee_j3fpmGUm3EviuIc3QTUWd4m1bERs0djvYjwrLMGloxRtloZMqL_8ivL8hz4bcvhAa5F0nY6jrnR-LGP2cgauiZdOxfolt_agI0YdPdzi6JAMX0Arl1hp4B0dfBsftF0DbZdyE7FCdaLd5m_XhiMDt-yJwClm08myng9YccNy6yn02U9kQiA_opYlk2JYfNZy5dlRggF3ky7bGrK2yVR7M9u25VHV1DLVbS.cbI804N2Mpctupmj1bpZwE0o-WNqjbcbK99pk7amyBo&dib_tag=se&keywords=pimp+clothes&qid=1737623311&sprefix=pimp+clothes%2Caps%2C154&sr=8-3" onclick="audioPlay()"> <img src="https://media.tenor.com/nflsJOrNMaoAAAAM/pimp-walk-pimp.gif" alt="Pimp" id="pimp"> </a>
+        <a href="https://www.amazon.com/California-Costumes-Purple-Large-Costume/dp/B003MQMZ7A/ref=sr_1_3?crid=2OZIDIUN3CLW6&dib=eyJ2IjoiMSJ9.Bs5EUqc33JroEcutgdAY54Lij7Oo4BgLAppCNFTId9qYF-BXg9q24BHcdnBa3gUmzI0NQEQaGF2W444R8uh_VbF0cP0ZlTsvKvtcoNHYEDJHnP8TB0fuG0tWoW-9iGw4f5YZphLRSZgyr4_VHOrXWlr0csR2OoqjIbAqfp5RDfOCsB8aPtK3g7Jmw35iQMKOvY7LsVR4L0IDE0kBipZ2iHMXCa4ee_j3fpmGUm3EviuIc3QTUWd4m1bERs0djvYjwrLMGloxRtloZMqL_8ivL8hz4bcvhAa5F0nY6jrnR-LGP2cgauiZdOxfolt_agI0YdPdzi6JAMX0Arl1hp4B0dfBsftF0DbZdyE7FCdaLd5m_XhiMDt-yJwClm08myng9YccNy6yn02U9kQiA_opYlk2JYfNZy5dlRggF3ky7bGrK2yVR7M9u25VHV1DLVbS.cbI804N2Mpctupmj1bpZwE0o-WNqjbcbK99pk7amyBo&dib_tag=se&keywords=pimp+clothes&qid=1737623311&sprefix=pimp+clothes%2Caps%2C154&sr=8-3" onclick="audioPlay()"> <img src="https://media.tenor.com/nflsJOrNMaoAAAAM/pimp-walk-pimp.gif" alt="Pimp" id="pimp1"> </a>
+
+    <div id="mid">
+        <br>
+        <a href="pimp.html" id="texs" onclick="audioPlay('pimp/p_3.mp3')">CLICK ME</a> 
+       <p id="tex">TO BUY HOOKERS</p>
+    </div>
+
+    </div>
+</div>
+<audio src="p_3.mp3" id="audio"></audio>
+<script>
+    let texs = document.getElementById("texs")
+    async function delayedLoop() {
+    for(let i=1; i < 6; i++){
+        console.log(i)
+        await new Promise(resolve => setTimeout(resolve,3000 ));
+        texs.style.transitionProperty = 'all';
+        texs.style.transitionTimingFunction = 'ease'
+        texs.style.transitionDuration = '1s'
+        if(i===5){
+           texs.style.color="purple"
+        }
+        if(i===4){
+            texs.style.color="green"
+        }
+        if(i===3){
+            texs.style.color="yellow"
+        }
+        if(i===2){
+            texs.style.color="orange"
+        }
+        if(i===1){
+            texs.style.color="red"
+        }
+        if(i===5){
+            i=0
+        }
+    }
+}
+const audio=document.getElementById("audio")
+const links = document.querySelectorAll('a');
+links.forEach(link => {
+      link.onclick = function(event) {
+        // Play the audio before navigating
+        audio.play();
+        
+        // Wait for the audio to finish, then allow the link to navigate
+        audio.onended = function() {
+          window.location = link.href; // Proceed to the link's destination
+        };
+
+        // Prevent default link navigation immediately
+        event.preventDefault();
+      };
+    });
+delayedLoop()
+</script>
+</body>
+</html>
